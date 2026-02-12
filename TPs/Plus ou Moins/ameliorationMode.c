@@ -4,6 +4,8 @@
 
 int main(int argc, char **argv)
 {
+
+    // Variables
     int modeJeu = 0;
     int continuerPartie;
     int difficultie = 0;
@@ -12,31 +14,34 @@ int main(int argc, char **argv)
     int nombreMax = 100;
     int compteur = 0;
 
+    // Présentation du jeu
     printf("Bienvenu dans le jeu Plus ou Moins ! \n");
     printf("La règle est de deviner le nombre aléatoire que l'oridinateur ou un autre joueur a choisi\n");
+    printf("Près pour commencer la partie ? ");
+
+    // Explication mode de jeu
     printf("Tout d'abord, il y a 2 mode de jeu : Mode Solo, mode Duo\n ");
     printf("Quel mode voulez-vous jouer : \n ");
     printf("1. Mode Solo\n");
     printf("2. Mode Duo\n");
 
     // Le joueur choisi le mode de Jeu
-    printf(" Mode : ");
-    scanf("%d", &modeJeu);
-
-    if (modeJeu == 1)
+    do
     {
-        // Le joueur choisi la difficulté du jeu
-        printf("Quelle sera la difficulté :  \n");
-        printf(" 1 = entre 1 et 100 \n");
-        printf(" 2 = entre 1 et 1000\n");
-        printf(" 3 = entre 1 et 10000\n ");
+        printf(" Mode : ");
+        scanf("%d", &modeJeu);
 
-        printf("Difficulté : ");
-        scanf("%d", &difficultie);
-
-        do
+        // Joueur contre IA
+        if (modeJeu == 1)
         {
+            // Le joueur choisi la difficulté du jeu
+            printf("Quelle sera la difficulté :  \n");
+            printf(" 1 = entre 1 et 100 \n");
+            printf(" 2 = entre 1 et 1000\n");
+            printf(" 3 = entre 1 et 10000\n ");
 
+            printf("Difficulté : ");
+            scanf("%d", &difficultie);
             switch (difficultie)
             {
             case 1:
@@ -84,12 +89,10 @@ int main(int argc, char **argv)
             {
                 printf("A très bientôt\n");
             }
-        } while (continuerPartie);
-    }
+        }
 
-    else if (modeJeu == 2)
-    {
-        do
+        // Joueur contre joueur
+        else if (modeJeu == 2)
         {
             printf("Un joueur doit saisir le nombre mystère : ");
             scanf("%d", &nombreMystere);
@@ -120,7 +123,9 @@ int main(int argc, char **argv)
             {
                 printf("A très bientôt\n");
             }
-        } while (continuerPartie);
-    }
+        }
+
+    } while (continuerPartie);
+
     return 0;
 }
