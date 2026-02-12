@@ -81,14 +81,6 @@ int main(int argc, char **argv)
             } while (nombreEntre != nombreMystere);
 
             printf("Bravo, vous avez deviné le nombre mystère en %d coups\n\n", compteur);
-
-            printf("Voulez-vous recommencer la partie? : ");
-            scanf("%d", &continuerPartie);
-
-            if (!continuerPartie)
-            {
-                printf("A très bientôt\n");
-            }
         }
 
         // Joueur contre joueur
@@ -115,14 +107,13 @@ int main(int argc, char **argv)
             } while (nombreEntre != nombreMystere);
 
             printf("Bravo, vous avez deviné le nombre mystère en %d coups\n\n", compteur);
+        }
+        printf("Voulez-vous recommencer la partie? : ");
+        scanf("%d", &continuerPartie);
 
-            printf("Voulez-vous recommencer la partie? : ");
-            scanf("%d", &continuerPartie);
-
-            if (!continuerPartie)
-            {
-                printf("A très bientôt\n");
-            }
+        if (!continuerPartie)
+        {
+            printf("A très bientôt\n");
         }
 
     } while (continuerPartie);
