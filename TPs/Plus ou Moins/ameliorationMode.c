@@ -108,6 +108,7 @@ int main(int argc, char **argv)
 
             printf("Bravo, vous avez deviné le nombre mystère en %d coups\n\n", compteur);
         }
+
         printf("Voulez-vous recommencer la partie? : ");
         scanf("%d", &continuerPartie);
 
