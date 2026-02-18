@@ -18,6 +18,7 @@ int main(int argc, char **argv)
     printf("Quel mode voulez-vous jouer : \n ");
     printf("1. Mode Solo\n");
     printf("2. Mode Duo\n");
+    printf("3. Quitter");
 
     // Le joueur choisi le mode de Jeu
     printf(" Mode : ");
@@ -118,7 +119,7 @@ int main(int argc, char **argv)
 
             if (!continuerPartie)
             {
-                printf("A très bientôt\n");
+                printf("A très bientôôôôt\n");
             }
         } while (continuerPartie);
     }

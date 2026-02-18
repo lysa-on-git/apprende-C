@@ -62,7 +62,7 @@ int main(int argc, char **argv)
             nombreMystere = (rand() % (nombreMax - MIN + 1)) + MIN;
 
             // La partie commence !!!
-            printf("Prêt ou pas, c'est partiii !! \n");
+            printf("Prêt ou pas, c'est partiiii !! \n");
 
             do
             {
