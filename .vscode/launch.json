@@ -7,9 +7,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
-      "cwd": "/home/lysa/Documents/Projects/C/condition/switch_case/Menu",
-      "program": "/home/lysa/Documents/Projects/C/condition/switch_case/Menu/build/Debug/outDebug",
+      "externalConsole": true,
+      "cwd": "c:/Users/Lysa/Desktop/Projets/C/apprende-C/Bases/Fonction",
+      "program": "c:/Users/Lysa/Desktop/Projets/C/apprende-C/Bases/Fonction/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
